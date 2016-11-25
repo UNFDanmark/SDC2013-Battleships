@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Tutorial"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In this multiplayer game you&apos;re going to destroy your opponent&apos;s ships by guessing their coordinates to win the match."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First you&apos;re going to place your ships by typing the coordinates in a 10x10 grid. These coordinates must be a number between 1 and 10."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The coordinates you type in will define the stern of the ship, the rest of the ship will either be placed vertically below or horizontally to the right. This you can choose with the &quot;Horizontal&quot; and &quot;Vertical&quot; buttons which is also your continue button. Make sure the end of the ship is inside the bounds."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/nextpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next page" />
+
+</LinearLayout>

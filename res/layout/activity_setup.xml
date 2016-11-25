@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SetUpP1" >
+
+    <TextView
+        android:id="@+id/welcometext_setup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Place your ships, Player 1!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/b_s_placement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcometext_setup"
+        android:layout_centerHorizontal="true"
+        android:text="Place the Patrol Boat" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="(Patrol Boat, Submarine, Destroyer, Battleship and Aircraft Carrier)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/xvalue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wintext"
+        android:ems="10"
+        android:hint="X value"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/yvalue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bvertical"
+        android:layout_alignRight="@+id/wintext"
+        android:layout_below="@+id/wintext"
+        android:ems="10"
+        android:hint="Y value"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/wintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xvalue"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/b_s_placement"
+        android:layout_marginTop="18dp"
+        android:text="Place your ships by typing the coords you want them at" />
+
+    <Button
+        android:id="@+id/bvertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yvalue"
+        android:layout_below="@+id/xvalue"
+        android:layout_marginTop="5dp"
+        android:text="Vertical" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xvalue"
+        android:layout_below="@+id/bvertical"
+        android:layout_marginTop="10dp"
+        android:text="You can place a total of 5 ships on your grid" />
+
+    <Button
+        android:id="@+id/bhorisontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/xvalue"
+        android:layout_below="@+id/xvalue"
+        android:layout_marginTop="5dp"
+        android:text="Horisontal" />
+
+</RelativeLayout>
